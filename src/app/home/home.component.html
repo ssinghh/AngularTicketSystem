@@ -1,0 +1,11 @@
+<html><span>{{ title }} app is running!</span>
+
+<div *ngFor = "let l of listTickets" (click)="popWind(l)">
+<li>{{l.cusName}}</li>
+</div> 
+<br>
+<br>
+<div *ngIf="showTicket"></div>
+<span>{{showTicket}}</span>
+
+</html>
